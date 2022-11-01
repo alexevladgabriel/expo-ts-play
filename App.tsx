@@ -80,6 +80,20 @@ export default function App() {
               <View className="flex-row justify-center">
                 <View className="w-[52] mt-2 h-[6px] rounded-full bg-[#e9eaee] items-center justify-center" />
               </View>
+
+
+
+            </View>
+
+            <BottomSheet
+              ref={bottomSheetRef}
+              index={0}
+              snapPoints={snapPoints}
+              onChange={handleSheetChanges}
+              enableContentPanningGesture
+              enableHandlePanningGesture
+            >
+              <View className="flex-1 items-center">
               <View className="px-5 py-2">
                 <View className="flex-row items-center bg-zinc-100 rounded-lg pl-2">
                   <View className="bg-[#eaeaec] rounded-full p-2">
@@ -117,18 +131,6 @@ export default function App() {
                   </TouchableHighlight>
                 </View>
               </View>
-            </View>
-
-            <BottomSheet
-              ref={bottomSheetRef}
-              index={0}
-              snapPoints={snapPoints}
-              onChange={handleSheetChanges}
-              enableContentPanningGesture
-              enableHandlePanningGesture
-            >
-              <View className="flex-1 items-center">
-                <Text>Awesome 🎉</Text>
               </View>
             </BottomSheet>
           </View>
