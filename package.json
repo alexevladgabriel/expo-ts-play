@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.19.4",
     "@gorhom/bottom-sheet": "^4",
     "expo": "~46.0.16",
     "expo-location": "~14.3.0",
